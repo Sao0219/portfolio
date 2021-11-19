@@ -1,39 +1,35 @@
 @charset "UTF-8";
 
 html {
-  /* フォントサイズを100%で指定しておくことで、ユーザーがブラウザで設定したフォントサイズが正しく反映されます */
   font-size: 100%;
 }
 body {
   color: #24292e;
 }
 a {
-  /* サイト内のリンクに下線が表示されないように設定します */
   text-decoration: none;
 }
 img {
-  /* 画像が画面の横幅からはみ出るのを防ぐためにmaxサイズを設定します */
   max-width: 100%;
 }
 li {
   list-style: none;
 }
 
-/* 画面の最大幅を指定。共通で使用します */
 .wrapper {
   max-width: 960px;
   margin: 0 auto 130px auto;
   font-size: 0.9rem;
   padding: 0 4%;
 }
-/* h1タグ用 */
+/* h1 */
 .site-title {
   line-height: 1px;
 }
 .site-title a {
   display: block;
 }
-/* h2タグ用 */
+/* h2 */
 .sec-title {
   font-size: 1.5rem;
   text-align: center;
@@ -57,15 +53,15 @@ SP
 
 #header {
     max-width: 960px;
-    display: flex;                  /* h1とnavを横並びに配置します */
-    justify-content: space-between; /* 両端にそろえます */
-    align-items: center;            /* 高さを中央でそろえます */
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;            
     height: 270px;
     margin: 0 auto;
     padding: 0 4%;
   }
   #header ul {
-    display: flex;                  /* liタグ（メニュー）を横並びに配置します */
+    display: flex;                 
     padding: 10px 0;
   }
   #header li {
@@ -76,7 +72,7 @@ SP
     color: #24292e;
   }
   #header li a:hover {
-    opacity: 0.7;                   /* メニューにマウスをのせた際に少し透過します */
+    opacity: 0.7;                  
   }
   #header li img.icon {
     width: 20px;
@@ -93,7 +89,7 @@ SP
     #header {
       max-width: 100%;
       height: auto;
-      flex-direction: column;    /* レスポンシブ時は、ロゴとグロナビを縦積みにします。 */
+      flex-direction: column;   
     }
     #header li {
       font-size: 0.8rem;
@@ -114,5 +110,5 @@ About
     margin-bottom: 30px;
   }
   #about p {
-    text-align:justify;  /* 両端で揃えます */
+    text-align:justify;  
   }
