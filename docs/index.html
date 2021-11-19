@@ -8,16 +8,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Sao's portfolio</h1>
-    <nav class="main-navigation">
-        <a href="about">About</a>
-        <a href="installation">Installation</a>
-        <a href="web-art">Web Art</a>
-        <a href="architecture">Architecture</a>
-        <a href="competition">Artwork for Competition</a>
-        <a href="contact">Contact</a>
-    </nav>
-    
+  <header id="header">
+        <h1 class="site-title"></a>Sao Ohtake</h1>
+  <nav>
+    <ul>
+      <li><a href="about">About</a></li>
+      <li><a href="installation">Installation</a></li>
+      <li><a href="#web-art">Web Art</a></li>
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="competition">Artwork for Competition</a></li>
+      <li><a href="contact">Contact</a></li>
+      <li>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <img class="icon" src="./img/icon-instagram.png" alt="Instagram">
+        </a>
+      </li>
+    </ul>
+  </nav>
+    </header>
+
+    <main>
+      <!-- main picture -->
+      <div id="mainvisual">
+        <picture>
+          <source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg">
+          <img src="installation/project1/images/death-1.jpg" alt="artwork">
+        </picture>
+      </div>
+
+
+      <!-- About -->
+      <section id="about" class="wrapper">
+        <h2 class="sec-title">About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquid quasi, facilis inventore explicabo consequatur tempora, et quod aliquam molestias ducimus alias ipsa debitis illum dolorum praesentium nisi eos totam!
+        </p>
+      </section>
+
 
 </body>
 </html>
