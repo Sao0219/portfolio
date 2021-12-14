@@ -1,16 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>No title: Tsunagari</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../lib/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="../../lib/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Installation Art</title>
 </head>
+
 <body>
-    <h1>No title: Tsunagari (2020)</h1>
-    <nav class="project3-navigation">
-        <a href="../../installation/">Installation Page</a>
-    </nav>    
+  <header id="header">
+    <h1 class="site-title">Sao Ohtake</h1>
+    <nav class="main-menu">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../index.html">Installation</a></li>
+        <li><a href="../../web-art/index.html">Web Art</a></li>
+        <li><a href="../../architecture/index.html">Architecture</a></li>
+        <li><a href="../../competition/index.html">Artwork for Competition</a></li>
+        <li><a href="../../bio/">BIO</a></li>
+        <li>
+          <a href="https://www.instagram.com/sao_ohtake" target="_blank" rel="noopener noreferrer">
+            <img class="icon" src="../../img-index/ig.png" alt="Instagram">
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+      <!-- Title -->
+      <div id="title" class="wrapper">
+        <h2>No title: Tsunagari (2020)</h2>
+        <h3>Dimensions (WxDxH)：4ft. x 4ft. x 6ft. / 1.2m x 1.2m x 1.8m
+          <br>
+            Materials：Red strings, Balloon, Wooden pieces </h3>
+
+          <br>
+
+      </div>
+
+
+
+      <!-- main picture -->
+      <div id="mainvisual" class="wrapper" style="text-align: center;">
+        <picture>
+          <source media="(max-width: 600px)" srcset="../project3/images/tsunagari-1.jpg">
+          <img src="../project3/images/tsunagari-1.jpg" alt="artwork">
+        </picture>
+      </div>
+
+      <div class="two-column-container">  
+      <!-- About artwork -->
+      <div id="left-container" class="wrapper">
+        <p>
+          “Abstract forms stimulate people’s imagination.”
+          I have been living with budgies since I was seven. Having lived with birds for most of my life, I can say that they are my closest companions that mitigate my worries and anxieties. When I left for college, I could no longer see my birds at home. However, it was the pigeons, birds that are abundant in American cities, that connected me to the city of Chicago and gave me comfort and peace in the new location.
+          
+
+        </p>
+      </div>
+
+
+      <div id="right-container" class="wrapper">
+        <div class="flex-container">
+          <div class="item">Emotion 1</div>
+          <div class="item">Emotion 2</div>
+          <div class="item">Emotion 3</div>
+          <div class="item">Emotion 4</div>
+          <div class="item">Emotion 5</div>
+          <div class="item">Emotion 6</div>
+        </div>
+      </div>
+      
+
+    </div>
+  </main>　　　
+
+   <!--artwork gallery -->
+   <ul class="slider-area slider">
+    <li><img src="images/tsunagari-1.jpg" alt="1"></li>
+    <li><img src="images/tsunagari-2.jpg" alt="2"></li>
+    <li><img src="images/tsunagari-3.jpg" alt="3"></li>
+    <li><img src="images/tsunagari-4.jpg" alt="4"></li>
+    
+    <!--/slider--></ul>
+  
+    <script type="text/javascript" src="../../lib/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../lib/slick/slick.js"></script>
+    <script src="main.js"></script>
+
+
+     <script>
+      $(".slider-area").slick({
+        dots: true,
+        variableWidth: true,
+        variableHeight: true,
+        centerMode: true,
+        infinite: true,
+        slideToShow: 3,
+        slideToScroll: 1,
+        autoplay: true,
+        infinite: true,
+        speed: 500
+      });
+    </script>
+  
+  　
+
+
 </body>
+
 </html>

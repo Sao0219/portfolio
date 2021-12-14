@@ -1,19 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>No title: Death</title>
-</head>
-<body>
-    <h1>No title: Death (2019)</h1>
-    <nav class="project1-navigation">
-        <a href="../../installation">Installation Page</a>
-        </nav>    
 
-    <img src="./images/death-1.jpg" alt="project1">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../lib/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="../../lib/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Installation Art</title>
+</head>
+
+<body>
+  <header id="header">
+    <h1 class="site-title">Sao Ohtake</h1>
+    <nav class="main-menu">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../index.html">Installation</a></li>
+        <li><a href="../../web-art/index.html">Web Art</a></li>
+        <li><a href="../../architecture/index.html">Architecture</a></li>
+        <li><a href="../../competition/index.html">Artwork for Competition</a></li>
+        <li><a href="../../bio/">BIO</a></li>
+        <li>
+          <a href="https://www.instagram.com/sao_ohtake" target="_blank" rel="noopener noreferrer">
+            <img class="icon" src="../../img-index/ig.png" alt="Instagram">
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+      <!-- Title -->
+      <div id="title" class="wrapper">
+        <h2>No title: Death (2019)</h2>
+        <h3>Dimensions (WxDxH)：4ft. x 4ft. x 6ft. / 1.2m x 1.2m x 1.8m
+          <br>
+            Materials：Red strings, Balloon, Wooden pieces </h3>
+
+          <br>
+
+      </div>
+
+
+
+      <!-- main picture -->
+      <div id="mainvisual" class="wrapper" style="text-align: center;">
+        <picture>
+          <source media="(max-width: 600px)" srcset="../project1/images/death-1.jpg">
+          <img src="../project1/images/death-1.jpg" alt="artwork">
+        </picture>
+      </div>
+
+      <div class="two-column-container">  
+      <!-- About artwork -->
+      <div id="left-container" class="wrapper">
+        <p>
+          “My work is to create ‘places’ that has meanings to the people, using ordinary ‘spaces’ ”
+           One day I found a dead pigeon while walking on a street in Chicago. While I wanted to take care of the poor carcass, its body was tightly stuck on the street with blood and could not do anything for it. “No title: Death” is based on the frustration that day, and is a requiem for burying the pigeon in my heart. The boundary between life and death is impossible to cross tangibly. However, it can be connected emotionally by "mourning" the dead. 
+
+        </p>
+      </div>
+
+
+      <div id="right-container" class="wrapper">
+        <div class="flex-container">
+          <div class="item">Emotion 1</div>
+          <div class="item">Emotion 2</div>
+          <div class="item">Emotion 3</div>
+          <div class="item">Emotion 4</div>
+          <div class="item">Emotion 5</div>
+          <div class="item">Emotion 6</div>
+        </div>
+      </div>
+      
+
+    </div>
+  </main>　　　
+
+   <!--artwork gallery -->
+   <ul class="slider-area slider">
+    <li><img src="images/death-2.jpg" alt="1"></li>
+    <li><img src="images/death-3.jpg" alt="2"></li>
+    <li><img src="images/death-4.jpg" alt="3"></li>
+    
+    <!--/slider--></ul>
+  
+    <script type="text/javascript" src="../../lib/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../lib/slick/slick.js"></script>
+    <script src="main.js"></script>
+
+
+     <script>
+      $(".slider-area").slick({
+        dots: true,
+        variableWidth: true,//幅の違う画像の高さを揃えて表示
+        variableHeight: true,
+        centerMode: true,//要素を中央ぞろえにする
+        infinite: true,
+        slideToShow: 3,
+        slideToScroll: 1,
+        autoplay: true,
+        infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+        speed: 500
+      });
+    </script>
+  
+  　
+
 
 </body>
+
 </html>
